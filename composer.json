@@ -1,0 +1,22 @@
+{
+    "name": "phpmonitor/phpmonitor-client",
+    "description": "The PHP package for phpmonitor",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Paul Mohr",
+            "email": "p.mohr@sopamo.de"
+        }
+    ],
+    "require": {
+        "illuminate/support": "5.x",
+        "illuminate/console": "5.x",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+      "psr-4": {
+        "Sopamo\\PHPMonitor\\": "src"
+      }
+    }
+}
