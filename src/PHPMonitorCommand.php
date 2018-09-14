@@ -50,12 +50,9 @@ class PHPMonitorCommand extends Command
             FreeDiskSpaceApplicationRootCollector::class,
             MemoryUsageCollector::class,
         ];
-        while(true) {
-            $this->PHPMonitor->collect($collectors);
+        $this->PHPMonitor->collect($collectors);
 
-            $this->PHPMonitor->submit();
-            sleep(10);
-        }
+        $this->PHPMonitor->submit();
     }
 
     /**
